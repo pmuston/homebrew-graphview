@@ -5,23 +5,23 @@ class Graphview < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.1.2/graphview-v0.1.2-darwin-arm64.tar.gz"
-      sha256 "69750c2131bda8db0e75e9231032d918c1c27e50c55f940d1a2abff2dd363179"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-darwin-arm64.tar.gz"
+      sha256 "46dcf095e7ee196868eaaef60347caaee7681b016ee85ce512ba0a9ec7dbeda0"
     end
     on_intel do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.1.2/graphview-v0.1.2-darwin-amd64.tar.gz"
-      sha256 "f2b5dab6496222b1eaac8ccc7359b4b6e61a5705f9e979bfb6ef1de948f9a2fe"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-darwin-amd64.tar.gz"
+      sha256 "37207913dcd2046585cb2637288084f2556408c3fbd61c7a8733a0d7dd805377"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.1.2/graphview-v0.1.2-linux-arm64.tar.gz"
-      sha256 "ffffe2f4b87253b4db67bdc275ecb8f101dbd3eed6df1c2827494db35ff7dcf5"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-linux-arm64.tar.gz"
+      sha256 "d60fd5a7129017faedcc6e6fa5773686aab262062abddfcea2eaa3e9c52adf3b"
     end
     on_intel do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.1.2/graphview-v0.1.2-linux-amd64.tar.gz"
-      sha256 "28986610103e6cdae0dd23c542409efda764bd99f90608223eea22aa729e2a30"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-linux-amd64.tar.gz"
+      sha256 "860b590736bcf76a09e6e99e2afa56f67acdf4fe5812789517251b70f9cb3016"
     end
   end
 
