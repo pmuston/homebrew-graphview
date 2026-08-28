@@ -5,29 +5,38 @@ class Graphview < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-darwin-arm64.tar.gz"
-      sha256 "46dcf095e7ee196868eaaef60347caaee7681b016ee85ce512ba0a9ec7dbeda0"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.2/graphview-v0.2.2-darwin-arm64.tar.gz"
+      sha256 "09fd370c90ff3232490e2ef3230e5315b80906cda4120815809b95ca70ea97a8"
     end
     on_intel do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-darwin-amd64.tar.gz"
-      sha256 "37207913dcd2046585cb2637288084f2556408c3fbd61c7a8733a0d7dd805377"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.2/graphview-v0.2.2-darwin-amd64.tar.gz"
+      sha256 "13afebe04e6f6af9278e5fd51731bd1ab0173a37a908c54fa82ed0484e40ab79"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-linux-arm64.tar.gz"
-      sha256 "d60fd5a7129017faedcc6e6fa5773686aab262062abddfcea2eaa3e9c52adf3b"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.2/graphview-v0.2.2-linux-arm64.tar.gz"
+      sha256 "829881043cbb884573cb4b152b223320ce906b08dca3ce4a77de697e0479041a"
     end
     on_intel do
-      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.0/graphview-v0.2.0-linux-amd64.tar.gz"
-      sha256 "860b590736bcf76a09e6e99e2afa56f67acdf4fe5812789517251b70f9cb3016"
+      url "https://github.com/pmuston/homebrew-graphview/releases/download/v0.2.2/graphview-v0.2.2-linux-amd64.tar.gz"
+      sha256 "688aa1c64394e3a2030f87ba0727924c3c4d18c613680c814228d5667724bd8c"
     end
   end
 
   def install
     bin.install "graphview"
     man1.install "graphview.1"
+    pkgshare.install "graphview.example.yaml", "deploy"
+    doc.install "THIRD-PARTY-NOTICES.md"
+  end
+
+  def caveats
+    <<~EOS
+      Configuration template and deployment samples:
+        #{opt_pkgshare}
+    EOS
   end
 
   test do
